@@ -86,3 +86,4 @@ W_fc5 = weight_variable([10, 1])
 b_fc5 = bias_variable([1])
 
 y = tf.multiply(tf.atan(tf.matmul(h_fc4_drop, W_fc5) + b_fc5), 2) #scale the atan output
+#rknn모델 변환 시 아직 atan함수를 지원하지 않기 때문에 tf.atan()을 지우고 train.py를 돌려야 rknn모델 변환 가능
