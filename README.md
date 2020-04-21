@@ -40,4 +40,4 @@ http://on-demand.gputechconf.com/gtc/2018/presentation/s8748-simulate-and-valida
 
 https://www.ctolib.com/amp/cyanamous-Self-Driving-Car-.html
 
-Message me if I've missed anything!
+<img src="https://github.com/17011813/Autopilot-TensorFlow/blob/master/2020-04-21%20(14).png" width="90%"></img>
