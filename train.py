@@ -14,7 +14,18 @@ train_vars = tf.trainable_variables()
 
 loss = tf.reduce_mean(tf.square(tf.subtract(model.y_, model.y))) + tf.add_n([tf.nn.l2_loss(v) for v in train_vars]) * L2NormConst
 train_step = tf.train.AdamOptimizer(1e-4).minimize(loss)
-sess.run(tf.global_variables_initializer())
+
+save_file='./save/model.ckpt'
+
+if os.path.isfile(save_file+".meta"):
+  saver=tf.train.Saver()
+  saver.restore(sess,save_file)
+  print("저장된 모델을 불러옵니다")
+
+else:
+  sess.run(tf.global_variables_initializer())
+  print("네트워크를 초기화합니다")
+
 
 # create a summary to monitor cost tensor
 tf.summary.scalar("loss", loss)
