@@ -11,7 +11,10 @@ val_batch_pointer = 0
 #read data.txt
 with open("driving_dataset/data.txt") as f:
     for line in f:
-        xs.append("driving_dataset/" + line.split()[0])
+        xs.append("driving_dataset/" + line.split()[0]
+                  
+        #최근 data 사용할 경우 line.split()[0]를 line.split()[0][0:8]로 수정해 주어야 data.txt에서 format맞아서 에러 없습니다.
+                  
         #the paper by Nvidia uses the inverse of the turning radius,
         #but steering wheel angle is proportional to the inverse of turning radius
         #so the steering wheel angle in radians is used as the output
