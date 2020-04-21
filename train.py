@@ -65,3 +65,7 @@ for epoch in range(epochs):
 print("Run the command line:\n" \
       "--> tensorboard --logdir=./logs " \
       "\nThen open http://0.0.0.0:6006/ into your web browser")
+
+
+#RKNN 변환 위해서 graph.pb 만들기 위한 코드
+tf.io.write_graph(sess.graph_def, '.', 'graph.pb', as_text=False)
