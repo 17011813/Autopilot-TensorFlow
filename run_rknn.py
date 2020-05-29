@@ -23,7 +23,7 @@ if ret != 0:
 i = 0
 
 while(cv2.waitKey(10) != ord('q')):
-    full_image = scipy.misc.imread("driving_dataset/" + str(i) + ".jpg", mode="RGB") #이미지 불러오기
+    full_image = scipy.misc.imread("driving_data/" + str(i) + ".jpg", mode="RGB") #이미지 불러오기 data는 기본 dataset은 2018 영상
     image = scipy.misc.imresize(full_image[-150:], [66, 200]) / 255.0      #이미지 크기 조정
     image = image.astype('float32')    #이미지 dtype을 float64  ----> float32
 
@@ -40,5 +40,5 @@ while(cv2.waitKey(10) != ord('q')):
 
     call("clear")
     print("Predicted steering angle: " + str(d) + " degrees")
-
+    cv2.imshow("frame", cv2.cvtColor(full_image, cv2.COLOR_RGB2BGR))        #영상 GUI창으로 확인
     i += 1
