@@ -25,21 +25,4 @@ Use `python run_dataset.py` to run the model on the dataset
 
 To visualize training using Tensorboard use `tensorboard --logdir=./logs`, then open http://0.0.0.0:6006/ into your web browser.
 
-# Acknowledged/Cited in
-D. Qian et al., "End-to-End Learning Driver Policy using Moments Deep Neural Network," 2018 IEEE International Conference on Robotics and Biomimetics (ROBIO), Kuala Lumpur, Malaysia, 2018, pp. 1533-1538.
-
-O’Kelly, M., Sinha, A., Namkoong, H., Duchi, J., & Tedrake, R. (2018). Scalable End-to-End Autonomous Vehicle Testing via Rare-event Simulation.
-
-Pan, X., You, Y., Wang, Z., & Lu, C. (2017). Virtual to Real Reinforcement Learning for Autonomous Driving. [https://arxiv.org/abs/1704.03952](https://arxiv.org/pdf/1704.03952.pdf)
-
-Xu, N., Tan, B., & Kong, B. (2018). Autonomous Driving in Reality with Reinforcement Learning and Image Translation.
-
-https://medium.com/@maxdeutsch/how-to-build-a-self-driving-car-in-one-month-d52df48f5b07
-
-https://mc.ai/self-driving-car-on-indian-roads/
-
-http://on-demand.gputechconf.com/gtc/2018/presentation/s8748-simulate-and-validate-your-dnn-inference-with-catia-before-adas-industrial-deployment.pdf
-
-https://www.ctolib.com/amp/cyanamous-Self-Driving-Car-.html
-
 <img src="https://github.com/17011813/Autopilot-TensorFlow/blob/master/2020-04-21%20(14).png" width="90%"></img>
